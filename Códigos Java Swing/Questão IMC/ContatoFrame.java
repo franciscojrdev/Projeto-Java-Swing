@@ -5,22 +5,22 @@ import javax.swing.text.AbstractDocument.DefaultDocumentEvent;
 
 import java.awt.event.*;
 
-public final class ContatoFrame implements ActionListener{  
+public class ContatoFrame implements ActionListener{  
     JTextField tf1,tf2,tf3;  
     JButton b1,b2; 
     
     public void Janela(){  
         JFrame f= new JFrame("Calculo de IMC");
         
-        //JLabel pesoLabel = new JLabel("Peso");
+        
         //Referente ao peso
         tf1=new JTextField("Peso");
         tf1.setBounds(70,50,150,20);
-        //JLabel alturaLabel = new JLabel("Altura");
+        
         //Referente a altura
         tf2=new JTextField("Altura");  
         tf2.setBounds(70,100,150,20);
-        //JLabel resultadoLabel = new JLabel("Resultado");
+        
         //Resultado
         tf3=new JTextField("Resultado");  
         tf3.setBounds(50,150,180,20);  
@@ -32,4 +32,5 @@ public final class ContatoFrame implements ActionListener{
         f.setSize(300,300);  
         f.setLayout(null);  
         f.setVisible(true);  
-    }         
+    } 
+}        
